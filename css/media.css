@@ -1,0 +1,13 @@
+@media screen and (max-width:1400px){}
+
+
+
+
+@media screen and (max-width:600px){
+.bg{background-position-x: 80%;}
+.search-box{text-align: center;}
+h1{font-size: 100px;}
+.search-box .searchInput{width: 300px;}
+
+
+}

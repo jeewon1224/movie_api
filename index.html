@@ -6,15 +6,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
     <title>Movie APP</title>
   </head>
   <body>
-    <div class="search-box">
-      <input type="text" class="searchInput">
-      <button type="button" class="sendBtn">
-        검색
-      </button>
-    </div>
+      <div class="wrap">
+        
+        <div class="containter">
+          <div class="nav">
+            <a href="#">C.Ground</a>
+            <ul class="clear">
+              <li><a href="#">HOME</a></li>
+              <li><a href="#">GENRE</a></li>
+              <li><a href="#">RATING</a></li>
+            </ul>          
+          </div>
+          
+          <div class="bg">
+            <div class="overlay clear"></div>
+            <div class="search-box">
+              <h1>CINE GROUND</h1>
+              <input type="text" class="searchInput" placeholder="검색어를 입력해주세요.">
+              <button type="button" class="sendBtn">
+                검색
+              </button>
+            </div>
+
+            <div class="loading">
+              <img src="img/loading.gif" alt="">
+            </div>
+              <div class="container2 clear">
+                <!-- <div class="recent-movie-wrap">
+                  <div class="recent-movies">
+                    <div>
+                      <img src="img/hero_portrait_1.png" alt="">
+                    </div>
+                    <h3 class="movie-title">Harry</h3>
+                  </div>
+                </div> -->
+                <!-- end of movie wrap -->
+                
+              </div>
+              <!-- end of movie container2 -->
+
+              <div class="numContainer">
+                <div class="numBtns">
+                  <button type="button" class="prev">prev</button>
+                  <button type="button" class="pageNum" value="1">1</button>
+                  <button type="button" class="pageNum" value="2">2</button>
+                  <button type="button" class="pageNum" value="3">3</button>
+                  <button type="button" class="pageNum" value="4">4</button>
+                  <button type="button" class="pageNum" value="5">5</button>
+                  <button type="button" class="next">next</button>
+                </div> 
+              </div>
+            
+
+            </div>
+   
+          </div>
+          
+        </div>
+
+
+
+
+
+
+
+
+
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
@@ -42,5 +104,6 @@
         });
       });
     </script>
+    <script src="/movie_api/js/recent.js"></script>
   </body>
 </html>

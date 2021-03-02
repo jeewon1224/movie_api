@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+ol, ul{list-style: none;}
+body{font-size: 14px; font-family: 'Open Sans', sans-serif; }
+.clear:after{clear: both; display: block; content: '';}
+.center{width:100%; height:auto; max-width:1200px; margin:auto; display:flex; flex-wrap:wrap;}
+a{text-decoration: none;}
+img{display: block;}
+button, input, textarea{outline: 0; font-family: 'Open Sans'; -webkit-appearance:none; border-radius: 0;}
+input[type="checkbox"]{-webkit-appearance:auto; }
+input::placeholder, textarea::placeholder{_color: #d0af51;}
+input:focus, textarea:focus{background:#f8f8f8;}
+
+
+
+/* search page */
+.searchPage{width: 100%; height: auto; background: #444; _background-image: url(../img/composition-cinema-elements-red-background-with-copy-space.jpg); background-size: cover;}
+
+
+/* .wrap{position: relative;} */
+.nav{position: relative; width: 100%; color: #fff; z-index: 999; padding: 10px; _background: #000;}  
+.nav>ul{}
+.nav>ul>li{float: right; margin-left: 20px;}
+.nav>ul>li>a{color: #fff;  font-size: 25px; font-weight: 400; font-family: 'Bebas Neue', cursive; }
+
+.movie_con{width: 100%; height: auto; display: flex; flex-wrap: wrap; justify-content: center; _align-items: center;}
+.movie_con .movie_box{display: inline-block; width: 100%; border-radius: 10px 10px; background:rgba(255,255,255,0.5); margin: 5px;  display: flex; flex-direction: column; justify-content: center; _align-items: center;}
+.movie_con .movie_box img{width: 100px;}
+.movie_con .movie_box h2{}
+.movie_con .movie_box P{}
+
+
+
+
+
