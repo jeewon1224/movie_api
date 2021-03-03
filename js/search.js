@@ -3,8 +3,20 @@ $(function () {
   let decodeValue = decodeURI(searchValue);
   
   
-
-
+  // $('.items').masonry({
+  //   // options
+  //   itemSelector: '.item',
+  //   columnWidth: '.item-sizer',
+  //   percentPosition: true
+  // });
+  
+  $('.movie_con').masonry({
+    // options
+    itemSelector: '.movie_box',
+    columnWidth: '.item-sizer',
+    percentPosition: true
+  });
+  
 
 
   $.ajax({
@@ -26,13 +38,28 @@ $(function () {
       let itemContents = [];
       $.each(obj.items, function (i, item) {
         //console.log(item.title);
+        // let itemHTML = `<div class="movie_box">
+        //                   <h2>${item.title}</h2>
+        //                   <img src="${item.image}" alt="" />
+        //                   <p>감독 :${item.director}</p>
+        //                   <p>개봉 :${item.pubDate}</p>
+        //                   <p>평점 :${item.userRating}</p>
+        //                 </div>`;
+        
         let itemHTML = `<div class="movie_box">
-                          <h2>${item.title}</h2>
-                          <img src="${item.image}" alt="" />
-                          <p>감독 :${item.director}</p>
-                          <p>개봉 :${item.pubDate}</p>
-                          <p>평점 :${item.userRating}</p>
+                          <div>
+                            <div class="img-box">
+                              <img src="${item.image}" alt="" />
+                            </div>
+                            <div class="item-txt">
+                              <h2>${item.title}</h2>
+                              
+                            </div>
+                          </div>
                         </div>`;
+        
+
+                        
         itemContents.push($(itemHTML).get(0));
       });
       $(".movie_con").append(itemContents);

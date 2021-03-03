@@ -1,13 +1,59 @@
-@media screen and (max-width:1400px){}
+@media screen and (max-width:1280px){
+  .header{padding: 10px 10px;}
+  .container{padding: 40px 40px;}
 
+}
+
+
+
+@media screen and (max-width:1024px){
+  /* .wrap{height: 100%;} */
+  .container{padding: 40px 40px;}
+  .container2{width: 100%;}
+
+  .recent-movie-wrap{width: 25%;}
+}
+
+
+
+@media screen and (max-width:700px){
+  .search-box{text-align: center;}
+  .search-box h1{font-size: 100px;}
+  .search-box .searchInput{width: 300px;}
+  .recent-movie-wrap{width: 33%;}
+}
 
 
 
 @media screen and (max-width:600px){
-.bg{background-position-x: 80%;}
-.search-box{text-align: center;}
-h1{font-size: 100px;}
-.search-box .searchInput{width: 300px;}
+  .bg{background-position-x: 80%;}
+  .search-box{text-align: center;}
+  .search-box .searchInput{width: 300px;}
 
 
+
+  .recent-movie-wrap{width: 50%;}
+
+}
+
+
+@media screen and (max-width:480px){
+  .nav .logo{display: none;}
+  .navList{width: 100%; justify-content:center;} 
+  .nav>ul>li{margin: 0 5px;}
+
+  .search-box .searchInput{width: 200px; height: 40px;}
+  .search-box .sendBtn{width: 50px; height: 40px;}
+
+
+
+
+
+  .headerWrap .logo{display: none;}
+  .headerWrap .nav{width: 100%; justify-content: center;}
+  .headerWrap .nav li{margin: 0 5px;}
+
+  .container{padding: 30px 10px;}
+  .recent-movie-wrap{padding: 3px;}
+  .numBtns button{padding: 5px;}
 }

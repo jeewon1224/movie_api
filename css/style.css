@@ -1,30 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
 
-*{margin: 0; padding: 0; box-sizing: border-box;}
-ol, ul{list-style: none;}
-body{font-size: 14px; font-family: 'Open Sans', sans-serif; }
-.clear:after{clear: both; display: block; content: '';}
+/* Reset CSS */
+*{margin:0; padding:0; box-sizing:border-box;}
+body{font-size:14px; font-family:'Open Sans', sans-serif;}
+.clear:after{clear:both; display:block; content:'';}
 .center{width:100%; height:auto; max-width:1200px; margin:auto; display:flex; flex-wrap:wrap;}
-a{text-decoration: none;}
-img{display: block;}
-button, input, textarea{outline: 0; font-family: 'Open Sans'; -webkit-appearance:none; border-radius: 0;}
-input[type="checkbox"]{-webkit-appearance:auto; }
-input::placeholder, textarea::placeholder{_color: #d0af51;}
-input:focus, textarea:focus{background:#f8f8f8;}
+ol, ul{list-style:none;}
+a{text-decoration: none; color:#111;}
+img{display:block;}
+button, input, textarea{outline:0; font-family:'Open Sans';-webkit-appearance: none;}
+input[type="checkbox"]{-webkit-appearance: auto; border-radius:0; border:1px solid #111;}
+input::placeholder, textarea::placeholder{color:#555; }
+/* input:focus, textarea:focus{background:#f8f8f8;} */
 
+.btn{color:#fff; background:#111; display:block; padding:10px 30px; border:1px solid #111;}
 
 /*  main */
-.wrap{width: 100%; height: 100vh; background: url(../img/composition-cinema-elements-red-background-with-copy-space.jpg); background-size: cover; _position: fixed;}
+.wrap{width: 100%; height: 100vh; _background: url(../img/composition-cinema-elements-red-background-with-copy-space.jpg); background-size: cover; _position: fixed;}
 .containter{width: 100%; height: 100%; _overflow: hidden;} 
 
-.nav{position: fixed; width: 100%; color: #fff; z-index: 999; padding: 10px;} 
-.nav>ul{}
-.nav>ul>li{float: right; margin-left: 20px;}
-.nav>ul>li>a{color: #fff;  font-size: 25px; font-weight: 400; font-family: 'Bebas Neue', cursive; }
+.nav{position: fixed; width: 100%; color: #fff; z-index: 999; padding: 10px; width: 100%; display: flex; justify-content: space-between; align-items: center;} 
+.nav .logo{float: left; font-family: 'Bebas Neue', cursive; color: #fff; font-size: 35px; font-weight: 600;}
+.nav .navList{display: flex;}
+.nav>ul>li{margin-left: 20px;}
+.nav>ul>li>a{color: #fff;  font-size: 25px; font-weight: 400; font-family: 'Bebas Neue', cursive; position: relative;}
+.nav>ul>li>a::after{content: ""; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 0; height: 3px; background: #fff; transition: all 0.3s ease-out;}
+.nav>ul>li>a:hover::after{width: 100%;}
 
-.bg{width: 100%; height: 100vh; _background: url(../img/composition-cinema-elements-red-background-with-copy-space.jpg); background-size: cover;}
 
-h1{width: 100%; height: auto; color: #fff; font-size: 160px; font-weight: 700; font-family: 'Bebas Neue', cursive;} 
+
+
+.bg{width: 100%; height: 100vh; background: url(../img/composition-cinema-elements-red-background-with-copy-space.jpg); background-size: cover;}
+
 
 
 .overlay{width: 100%; height: 100vh; background: #111 ; opacity: 0.3; }
@@ -35,6 +44,7 @@ h1{width: 100%; height: auto; color: #fff; font-size: 160px; font-weight: 700; f
 
 
 .search-box{width: 100%; height: auto; text-align: center; transform: translateY(-50%); position: absolute; top: 50%; text-align: right; padding: 0 30px;}
+.search-box h1{width: 100%; height: auto; color: #fff; font-size: 160px; font-weight: 700; font-family: 'Bebas Neue', cursive;} 
 .search-box .searchInput{border: none; width: 500px; height: 50px; padding: 5px; background: #eee; border-radius: 3px;} 
 .search-box .sendBtn{width: 100px; height: 50px; border: none; background: #111; color: #fff; border-radius: 3px;}
 
@@ -49,5 +59,14 @@ h1{width: 100%; height: auto; color: #fff; font-size: 160px; font-weight: 700; f
 .numContainer{width: 80%; height: auto; margin: auto; max-width: 980px;}
 .numContainer .numBtns{width: 100%; text-align: center;  margin: 20px auto 50px;}
 
+.numBtns button.active, .numBtns button.arrow{background: #555;}
+
 
 .loading{width: 100%; height: 608px; display: flex; justify-content: center; align-items: center;}
+
+
+
+
+
+
+

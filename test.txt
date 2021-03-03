@@ -9,3 +9,18 @@ pw : C_1U9Wni6H
 
 
 https://yts.mx/api/v2/list_movies.json?sort_by=year&order_by=desc&limit=10&page=1
+
+https://yts.mx/api/v2/list_movies.json?genre=action&page=1&limit=15
+
+
+json formatter
+
+
+
+
+
+28197
+
+I'm Not Scared
+
+https://yts.mx/api/v2/movie_details.json?movie_id=28197
