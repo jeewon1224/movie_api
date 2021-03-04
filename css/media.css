@@ -11,7 +11,15 @@
   .container{padding: 40px 40px;}
   .container2{width: 100%;}
 
+
+  /* recent */
   .recent-movie-wrap{width: 25%;}
+
+
+
+  /* genre */
+  .genreTit{margin: 0;}
+
 }
 
 
@@ -21,11 +29,17 @@
   .search-box h1{font-size: 100px;}
   .search-box .searchInput{width: 300px;}
   .recent-movie-wrap{width: 33%;}
+
+   /* genre */
+   .buttons button{font-size: 12px;}
+   .all{width: 50px;font-size: 12px;}
+ 
 }
 
 
 
 @media screen and (max-width:600px){
+  .container{padding: 20px;}
   .bg{background-position-x: 80%;}
   .search-box{text-align: center;}
   .search-box .searchInput{width: 300px;}
@@ -34,10 +48,22 @@
 
   .recent-movie-wrap{width: 50%;}
 
+
+/* genre */
+.buttons button{font-size: 11px; padding: 5px;}
+.all{width: 50px;font-size: 11px; padding: 5px;}
+
+.genre-section>div{margin: 10px 0;}
+.slide-txt p,.silde-inbox .detail{width: 100%;}
+.silde-inbox .detail{text-align: left;}
+
 }
 
 
 @media screen and (max-width:480px){
+
+
+
   .nav .logo{display: none;}
   .navList{width: 100%; justify-content:center;} 
   .nav>ul>li{margin: 0 5px;}
@@ -53,7 +79,19 @@
   .headerWrap .nav{width: 100%; justify-content: center;}
   .headerWrap .nav li{margin: 0 5px;}
 
-  .container{padding: 30px 10px;}
+  .container{padding: 20px 10px;}
+
+  .recentTit{margin: 0;}
   .recent-movie-wrap{padding: 3px;}
   .numBtns button{padding: 5px;}
+
+
+
+  /* genre */
+  .genreTit{margin: 0;}
+  .tabs{flex-direction: column; margin: 5px 0;}
+  .all{width: 100%; margin-bottom: 5px;}
+  .buttons{display: flex; flex-wrap: wrap; justify-content: space-between;
+}
+.buttons button{width: 32%;margin-bottom: 5px;}
 }

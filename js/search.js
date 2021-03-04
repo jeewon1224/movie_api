@@ -63,6 +63,10 @@ $(function () {
         itemContents.push($(itemHTML).get(0));
       });
       $(".movie_con").append(itemContents);
+
+      $(".movie_con").imagesLoaded(function() {
+        $(".movie_con").masonry('appended', itemContents);
+      });
     },
   });
 });

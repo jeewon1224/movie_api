@@ -4,9 +4,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/genre.css">
   <link rel="stylesheet" href="/movie_api/plugin/lightslider.css">
+  <link rel="stylesheet" href="css/genre.css">
+  <link rel="stylesheet" href="css/media.css">
+  <!-- <link rel="stylesheet" href="css/reset.css"> -->
 
 
   <title>Genre</title>
@@ -19,7 +20,7 @@
         <a href="/movie_api/index.html" class="logo">C.Ground</a>
         <ul class="nav">
           <li><a href="/movie_api/index.html">HOME</a></li>
-          <li><a href="#">GENRE</a></li>
+          <li><a href="/movie_api/genre.html">GENRE</a></li>
           <li><a href="#">RATING</a></li>
           <li><a href="/movie_api/recent.html">RECENT</a></li>
         </ul>
@@ -30,34 +31,74 @@
 
 
 
-
-    <div class="genre-section">
-      <div class="action">
-        <div class="action-contents" id="actionSlide">
-          <!-- <div class="silde-box">
-            <div>
-              <img src="img/new-arrival-1.jpg" alt="">
-              <div class="slide-txt">
-                <h3>Movie title</h3>
-                <p class="rating">Rating : 8.0</p>
-              </div>
-              <a href="#">Details</a>
+    <div class="center">
+      <div class="container">
+        <h3 class="genreTit">GENRE</h3>
+        <div class="tabs">
+          <a href="#" class="all">All</a>
+          <div class="buttons">
+            <button>Action</button>
+            <button>Romance</button>
+            <button>Drama</button>
+            <button>Animation</button>
+            <button>Musical</button>
+            <button>Family</button>
+          </div>
+        </div>
+           
+        <div class="genre-section">
+          <div class="action">
+            <h4>Action</h4>
+            <div class="action-contents" id="actionSlide">
+              <!-- <div class="silde-box">
+                <div>
+                  <a href="arrowBtn"><i class="fa fa-angle-right"></i></a>
+                  <img src="img/new-arrival-1.jpg" alt="">
+                  <div class="slide-txt">
+                    <h3>Movie title</h3>
+                    <p class="rating">Rating : 8.0</p>
+                  </div>
+                  <a href="#">Details</a>
+                </div>
+              </div> -->
+              <!-- end of slide-box -->
+              
             </div>
-          </div> -->
-          <!-- end of slide-box -->
-          
+          </div>
+          <!-- end of action -->
+
+          <div class="romance">
+            <h4>Romance</h4>
+            <div class="romance-contents" id="romanceSlide"></div>
+          </div>
+
+          <div class="drama">
+            <h4>Drama</h4>
+            <div class="drama-contents" id="dramaSlide"></div>
+          </div>
+
+          <div class="animation">
+            <h4>Animation</h4>
+            <div class="animation-contents" id="animationSlide"></div>
+          </div>
+          <div class="musical">
+            <h4>Musical</h4>
+            <div class="musical-contents" id="musicalSlide"></div>
+          </div>
+          <div class="family">
+            <h4>Family</h4>
+            <div class="family-contents" id="familySlide"></div>
+          </div>
+        </div>
+        <!-- end of genre section -->
+        
+        <div class="moreBtn">
+          <a href="https://yts.mx/browse-movies/0/all/all/0/featured/0/all" class="viewMore">더보기</a>
         </div>
       </div>
-      <!-- end of action -->
-
-      <div class="romance">
-        <div class="romance-contents" id="romanceSlide"></div>
-      </div>
-
-      <div class="drama">
-        <div class="drama-contents" id="dramaSlide"></div>
-      </div>
+      <!-- end of container -->
     </div>
+    <!-- end of center -->
 
 
   </div>
@@ -71,6 +112,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="/movie_api/plugin/lightslider.js"></script>
     <script src="/movie_api/js/genre.js"></script>
+    <script src="/movie_api/js/genre_panel.js"></script>
   
 </body>
 </html>
