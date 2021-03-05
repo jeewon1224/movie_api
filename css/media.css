@@ -39,7 +39,7 @@
 
 
 
-@media screen and (max-width:740px){
+@media screen and (max-width:700px){
   .search-box{text-align: center;}
   .search-box h1{font-size: 100px;}
   .search-box .searchInput{width: 300px;}
