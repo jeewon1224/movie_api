@@ -2,19 +2,13 @@ $(function () {
   let searchValue = document.location.href.split("=")[1];
   let decodeValue = decodeURI(searchValue);
   
-  
-  // $('.items').masonry({
-  //   // options
-  //   itemSelector: '.item',
-  //   columnWidth: '.item-sizer',
-  //   percentPosition: true
-  // });
-  
   $('.movie_con').masonry({
     // options
     itemSelector: '.movie_box',
     columnWidth: '.item-sizer',
-    percentPosition: true
+    // columnWidth: 20,
+    percentPosition: true,
+   
   });
   
 
@@ -37,7 +31,7 @@ $(function () {
 
       let itemContents = [];
       $.each(obj.items, function (i, item) {
-        //console.log(item.title);
+        // console.log(item.title);
         // let itemHTML = `<div class="movie_box">
         //                   <h2>${item.title}</h2>
         //                   <img src="${item.image}" alt="" />
@@ -53,7 +47,9 @@ $(function () {
                             </div>
                             <div class="item-txt">
                               <h2>${item.title}</h2>
-                              
+                              <p class="director">감독 : ${item.director}</p>
+                              <p class="date">개봉 : ${item.pubDate}</p>
+                              <p class="rate">평점 : ${item.userRating}</p>
                             </div>
                           </div>
                         </div>`;
@@ -69,4 +65,10 @@ $(function () {
       });
     },
   });
+
+
+
+
+
+
 });

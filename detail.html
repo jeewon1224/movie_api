@@ -4,18 +4,63 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/detail.css">
+  <link rel="stylesheet" href="css/media.css">
+
+
   <title>Detail page</title>
 </head>
 <body>
   
+  <div class="detail_wrap">
+    <header class="detail_header">
+      <div class="de_headerWrap center">
+        <a href="/movie_api/index.html" class="logo">C.Ground</a>
+        <ul class="nav">
+          <li><a href="/movie_api/index.html">HOME</a></li>
+          <li><a href="/movie_api/genre.html">GENRE</a></li>
+          <li><a href="#">RATING</a></li>
+          <li><a href="/movie_api/recent.html">RECENT</a></li>
+        </ul>
+      </div>
+      <!-- end of headerWrap -->
+    </header>
+    <!-- end of header -->
 
+    <div class="center">
+      <div class="container">
+        <h3 class="detailTit">About<hr></h3>
+        <div class="detailBox">
+          <!-- <div class="img_txt">
+                  <div class="image">
+                    <img src="${data.data.movie.medium_cover_image}" alt="" class="poster">
+                  </div>
+                  <div class="detailTxt">
+                    <h3 class="title">${data.data.movie.title}</h3>
+                    <div>
+                      <p class="rate">${data.data.movie.rating}</p>
+                      <p class="runtime">${data.data.movie.runtime}</p>
+                      <p class="genre">${data.data.movie.genres}</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="desc">${data.data.movie.description_full}</div> -->
+        </div>
+        
+      </div>
+      <!-- end of container -->
+    </div>
+    <!-- end of center -->
 
-
-
-
-
+  </div>
+  <!-- end of wrap -->
+  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script>
+  <script src="js/detail.js"></script>
+
+
+  <!-- <script>
     $(function(){
       let detailID = document.location.href.split("=")[1];
       // console.log(detailID)
@@ -24,12 +69,14 @@
         url:"https://yts.mx/api/v2/movie_details.json?movie_id="+detailID,
         success:function(detailData){
           console.log(detailData);
+
         }
-        
-      });
+      });    
     });
     
     
-    </script>
+    </script> -->
+
+    
 </body>
 </html>

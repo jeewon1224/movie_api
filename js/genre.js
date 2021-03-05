@@ -10,11 +10,11 @@ $(function(){
         for(let i=0; i<data.data.movies.length; i++){
           let genreHTML = `<div class="slide-box">
                             <div class="silde-inbox">
-                              <img src="${data.data.movies[i].medium_cover_image}" alt="">
+                              <img src="${data.data.movies[i].medium_cover_image}" alt="" onError="this.src='/movie_api/img/replace.jpg';">
                               <div class="slide-txt">
                                 <h3>${data.data.movies[i].title}</h3>
                                 <p class="rating">Rating : ${data.data.movies[i].rating}</p>
-                                <a href="/movie_api/detail.html?id=${data.data.movies[i].id}" class="detail">Details</a>
+                                <a href="/movie_api/detail.html?id=${data.data.movies[i].id}" class="detail" target="_blank">Details</a>
                               </div>
                             </div>
                           </div>`
@@ -64,6 +64,10 @@ $(function(){
   getGenre('animation', '.animation-contents' , '#animationSlide');
   getGenre('musical', '.musical-contents' , '#musicalSlide');
   getGenre('family', '.family-contents' , '#familySlide');
+  getGenre('adventure', '.adventure-contents' , '#adventureSlide');
+  getGenre('fantasy', '.fantasy-contents' , '#fantasySlide');
+  getGenre('thriller', '.thriller-contents' , '#thrillerSlide');
+  getGenre('crime', '.crime-contents' , '#crimeSlide');
 
   
 });
