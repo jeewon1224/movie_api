@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <title>CINE GROUND</title>
+  </head>
+  <body>
+      <div class="wrap">
+        
+        <div class="containter">
+          <div class="nav">
+            <a href="/movie_api/index.html" class="logo">C.Ground</a>
+            <ul class="navList clear">
+              <li><a href="#">HOME</a></li>
+              <li><a href="/movie_api/genre.html">GENRE</a></li>
+              <li><a href="#">RATING</a></li>
+              <li><a href="/movie_api/recent.html">RECENT</a></li>
+            </ul>          
+          </div>
+          
+          <div class="bg">
+            <div class="overlay clear"></div>
+            <div class="search-box">
+              <h1>CINE GROUND</h1>
+              <div class="innerBox">
+                <input type="text" class="searchInput" placeholder="검색어를 입력해주세요.">
+                <button type="button" class="sendBtn">Search</button>
+              </div>
+            </div>
+
+              <!-- <div class="loading">
+                <img src="img/loading.gif" alt="">
+              </div>
+              <div class="container2 clear">
+                <div class="recent-movie-wrap">
+                  <div class="recent-movies">
+                    <div>
+                      <img src="img/hero_portrait_1.png" alt="">
+                    </div>
+                    <h3 class="movie-title">Harry</h3>
+                  </div>
+                </div>
+                end of movie wrap
+                
+              </div>
+              end of movie container2 -->
+
+              <!-- <div class="numContainer">
+                <div class="numBtns">
+                  <button type="button" class="prev arrow">prev</button>
+                  <button type="button" class="pageNum" value="1">1</button>
+                  <button type="button" class="pageNum" value="2">2</button>
+                  <button type="button" class="pageNum" value="3">3</button>
+                  <button type="button" class="pageNum" value="4">4</button>
+                  <button type="button" class="pageNum" value="5">5</button>
+                  <button type="button" class="next arrow">next</button>
+                </div> 
+              </div> -->
+            
+
+
+
+
+            </div>
+   
+          </div>
+          
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(function () {
+        function searchMovie() {
+          let searchResult = $(".searchInput").val();
+          if (!searchResult) {
+            alert("검색어를 입력해 주세요.");
+            return false;
+          }
+
+          location.href = "/movie_api/search.html?key=" + searchResult;
+        }
+
+        $(".sendBtn").click(function () {
+          searchMovie();
+        });
+
+        //press enter
+        document.addEventListener("keydown", function (e) {
+          const keyCode = e.keyCode;
+          if (keyCode == 13) {
+            searchMovie();
+          }
+        });
+      });
+    </script>
+
+    <script src="/movie_api/js/recent.js"></script>
+  </body>
+</html>

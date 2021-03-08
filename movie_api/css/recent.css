@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+
+/* Reset CSS */
+*{margin:0; padding:0; box-sizing:border-box;}
+body{font-size:14px; font-family:'Open Sans', sans-serif;}
+.clear:after{clear:both; display:block; content:'';}
+.center{width:100%; height:auto; max-width:1200px; margin:auto; display:flex; flex-wrap:wrap;}
+ol, ul{list-style:none;}
+a{text-decoration: none; color:#111;}
+img{display:block;}
+button, input, textarea{outline:0; font-family:'Open Sans';-webkit-appearance: none;}
+input[type="checkbox"]{-webkit-appearance: auto; border-radius:0; border:1px solid #111;}
+input::placeholder, textarea::placeholder{color:#555;}
+/* input:focus, textarea:focus{background:#f8f8f8;} */
+
+.btn{color:#fff; background:#111; display:block; padding:10px 30px; border:1px solid #111;}
+
+
+
+
+
+.wrap{width: 100%; height: auto; _overflow:scroll; display: flex; flex-direction: column; align-items: center; justify-content: center; background: #222; _background: url(../img/theater.jpg) no-repeat; background-size: cover; background-attachment: fixed; background: #222;}
+
+
+.header{width: 100%; height: auto; _position: fixed; padding: 10px 0; top: 0;}
+.headerWrap{width: 100%; height: auto; display: flex; justify-content: space-between; align-items: center;}
+.headerWrap .logo{color: #00ffd0; font-family: 'Bebas Neue', cursive; font-size: 35px; font-weight: 600;}
+.headerWrap .nav{display: flex;}
+.headerWrap .nav li{margin-left: 10px; font-family: 'Bebas Neue', cursive; font-size: 25px;}
+
+.headerWrap .nav li a{color: #00ffd0; position: relative; padding-bottom: 3px;}
+.headerWrap .nav li a::after{content: ""; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 0; height: 3px; background: #00ffd0; transition: all 0.3s ease-out;}
+.headerWrap .nav li a:hover::after{width: 100%;}
+
+.container{width: 100%; height: auto; padding: 40px 0;}
+
+.recentTit{color: #fff; ; width: 100%; _max-width: 980px; font-size: 30px; font-style: italic;font-family: 'Bebas Neue', cursive;}
+.recentTit .line{width: 100%; border: 1px solid #fff;}
+
+.container2{width: 100%; height: auto; margin: auto; _max-width: 980px; display: flex; flex-wrap: wrap; justify-content: center;}
+.recent-movie-wrap{width: 20%;float: left; padding :10px; _background-color: rgba( 255, 255, 255, 0.5); }
+.recent-movies{padding: 10px; _background-color: rgba( 255, 255, 255, 0.8); border-radius: 5px; text-align: center;} 
+.recent-movie-wrap img{width: 100%;}
+.recent-movie-wrap h3{font-size: 12px; white-space: nowrap; text-overflow: ellipsis; width: 100%; overflow: hidden; color: #fff; font-size: 15px; margin-top:5px ;}
+
+.numContainer{width: 80%; height: auto; margin: auto; max-width: 980px;}
+.numContainer .numBtns{width: 100%; text-align: center;  margin: 30px auto 50px;}
+
+.numBtns button{border: none; border-radius: 5px; padding: 10px; margin: 0 3px;}
+.numBtns button.active, .numBtns button.arrow{background: #00ffd0;}
+
+
+.loading{width: 100%; height: 608px; display: flex; justify-content: center; align-items: center;}

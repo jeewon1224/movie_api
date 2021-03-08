@@ -21,7 +21,7 @@ $(function () {
     },
     success: function (data) {
       let obj = JSON.parse(data);
-      //console.log(obj);
+      console.log(obj);
       //console.log(obj.items);
 
       if (obj.items.length == 0) {
@@ -31,13 +31,14 @@ $(function () {
 
       let itemContents = [];
       $.each(obj.items, function (i, item) {
-        // console.log(item.title);
+        console.log(item.link);
         // let itemHTML = `<div class="movie_box">
         //                   <h2>${item.title}</h2>
         //                   <img src="${item.image}" alt="" />
         //                   <p>감독 :${item.director}</p>
         //                   <p>개봉 :${item.pubDate}</p>
         //                   <p>평점 :${item.userRating}</p>
+        //                   <a href="#">더보기</a>
         //                 </div>`;
         
         let itemHTML = `<div class="movie_box">
@@ -50,6 +51,7 @@ $(function () {
                               <p class="director">감독 : ${item.director}</p>
                               <p class="date">개봉 : ${item.pubDate}</p>
                               <p class="rate">평점 : ${item.userRating}</p>
+                              <a href="${item.link}">더보기</a>
                             </div>
                           </div>
                         </div>`;

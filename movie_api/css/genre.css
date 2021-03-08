@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+/* Reset CSS */
+*{margin:0; padding:0; box-sizing:border-box;}
+/* body{font-size:14px; font-family:'Open Sans', sans-serif;} */
+.clear:after{clear:both; display:block; content:'';}
+.center{width:100%; height:auto; max-width:1200px; margin:auto; display:flex; flex-wrap:wrap;}
+ol, ul{list-style:none;}
+a{text-decoration: none; color:#111;}
+img{display:block;}
+button, input, textarea{outline:0; font-family:'Open Sans';-webkit-appearance: none;}
+input[type="checkbox"]{-webkit-appearance: auto; border-radius:0; border:1px solid #111;}
+input::placeholder, textarea::placeholder{color:#555; }
+/* input:focus, textarea:focus{background:#f8f8f8;} */
+
+.btn{color:#fff; background:#111; display:block; padding:10px 30px; border:1px solid #111;}
+
+
+/* genre */
+.wrap{width: 100%; height: auto; _background: url(../img/theater.jpg) no-repeat; background-size: cover; background-attachment: fixed; background: #222;}
+
+/* header */
+
+.header{width: 100%; height: auto;  padding: 10px 0; _position: fixed; z-index: 2;}
+.headerWrap{width: 100%; display: flex; flex-direction: row; justify-content: space-between; align-items: center; height: auto;}
+.headerWrap .logo{font-size: 35px; color: #00ffd0; font-family: 'Bebas Neue', cursive; font-weight: 600;}
+.headerWrap .nav{display: flex; font-weight: 600;}
+.headerWrap .nav li{margin-left: 10px; font-family: 'Bebas Neue', cursive; font-size: 25px;}
+.headerWrap .nav li a{color: #00ffd0; position: relative; padding-bottom: 3px;}
+.headerWrap .nav li a::after{content: ""; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 0; height: 3px; background: #00ffd0; transition: all 0.3s ease-out;}
+.headerWrap .nav li a:hover::after{width: 100%;}
+
+
+
+
+
+
+.container{width: 100%; height: auto; padding: 40px 0;}
+
+.genreTit{width: 100%; _max-width: 980px; font-size: 30px; color: #fff; font-style: italic; font-family: 'Bebas Neue', cursive;}
+.genreTit .line{width: 100%; border: 1px solid #fff;}
+
+
+.tabs{width: 100%; _max-width: 980px; margin: 20px auto ; display: flex; height: auto;}
+.all{color: #111; width: 50px; display: flex; justify-content: center; align-items: center; margin-right: 5px; _background: rgba(255,255,255,0.6); font-size: 15px; font-weight: 600; transition: all 0.5s; background: #fff;}
+.buttons{width: 100%; height: auto; margin: auto;}
+.buttons button{_height: 30px; border: none; outline: none; _background: rgba(255,255,255,0.6); _width: 100px; font-size: 15px; font-weight: 600; transition: all 0.5s; padding: 10px; background: #fff;}
+
+.all:hover,
+.buttons button:hover{background: #00ffd0;}
+
+.all.on{background: #00ffd0;}
+.buttons button.on{background: #00ffd0;}
+
+
+
+.genre-section{width: 100%; _max-width: 980px; height: auto; margin:auto; }
+.genre-section>div{margin: 30px 0;  _background: rgba(255,255,255,0.6); padding: 10px 10px 0 10px; border-radius: 5px;}
+.slide-box{padding: 5px;}
+
+.genre-section h4{width: 100%; border-bottom: 1px solid #fff; margin: 10px 0; font-size: 20px; color: #fff;}
+
+.slide-box .silde-inbox{display: flex; align-items: center; justify-content: center; flex-direction: column; _padding: 5px;}
+.silde-inbox img{width: 100%;}
+.silde-inbox .slide-txt{text-align: left; margin-top: 5px; width: 100%;     display: flex;
+  flex-wrap: wrap;
+}
+.slide-txt h3{font-size: 15px; width: 100%; margin: 5px 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: #fff;}
+.slide-txt p{font-size: 13px; color: #fff; width: 50%;}
+.silde-inbox .detail{font-size: 13px; transition: all 0.4s; display: inline-block; width: 100%; text-align: left; color: #00ffd0; width: 50%; text-align: center;}
+.silde-inbox .detail:hover{font-weight: bold;}
+
+.moreBtn{width: 100%; text-align: center; margin-bottom: 50px;}
+.moreBtn .viewMore{color: #111; background: #00ffd0; padding: 10px 30px; font-weight: 400;}
+
+
+
+
+

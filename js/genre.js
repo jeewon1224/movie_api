@@ -14,7 +14,9 @@ $(function(){
                               <div class="slide-txt">
                                 <h3>${data.data.movies[i].title}</h3>
                                 <p class="rating">Rating : ${data.data.movies[i].rating}</p>
-                                <a href="/movie_api/detail.html?id=${data.data.movies[i].id}" class="detail" target="_blank">Details</a>
+                                
+                                <a href="${data.data.movies[i].url}" class="detail" target="_blank">Details</a>
+
                               </div>
                             </div>
                           </div>`
